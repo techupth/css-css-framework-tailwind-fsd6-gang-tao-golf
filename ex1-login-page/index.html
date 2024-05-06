@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  <body class="bg-slate-200 w-auto h-screen flex items-center justify-center">
+    <div
+      class="flex gap-4 p-10 bg-white w-auto h-auto rounded-xl flex-col justify-center"
+    >
+      <h1 class="text-left flex font-semibold text-xl text-zinc-600">
+        Login to website
+      </h1>
 
-<body>
-  <!-- Start coding here -->
-</body>
+      <form
+        action="/login"
+        class="flex flex-col gap-5 justify-center font-semibold"
+      >
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="h-10 ml-7 border-zinc-600 p-2 border hover:border-violet-500 focus:border-violet-300"
+          />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            class="h-10 border-zinc-600 p-2 border hover:border-violet-500 focus:border-violet-300"
+          />
+        </div>
+      </form>
 
+      <div class="flex justify-between">
+        <button
+          class="w-36 p-2 bg-violet-500 text-white rounded-full active:bg-violet-600 hover:bg-violet-400 focus:ring ring-violet-300"
+        >
+          Sign in
+        </button>
+        <button
+          class="w-36 p-2 rounded-full bg-white hover:bg-violet-100 focus:ring ring-violet-300 text-violet-600"
+        >
+          Sign Up
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
