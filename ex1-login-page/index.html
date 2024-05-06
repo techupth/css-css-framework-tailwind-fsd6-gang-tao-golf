@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-  <!-- Start coding here -->
-</body>
-
+  <body class="bg-slate-200 flex justify-center items-center h-screen">
+    <div class="bg-white flex flex-col items-start gap-4 rounded-xl p-4">
+      <h1 class="zinc-600 text-xl">Login to Website</h1>
+      <form action="" class="flex flex-col gap-4">
+        <div class="flex items-center justify-between">
+          <label for="femail" class="text-gray-700">Email</label>
+          <input
+            type="email"
+            name="femail"
+            id="femail"
+            class="border border-zinc-600 p-2 rounded-xl hover:border-violet-500 focus:border-violet-300"
+          />
+        </div>
+        <div class="flex items-center justify-between gap-4">
+          <label for="fpassword">Password</label>
+          <input
+            type="email"
+            name="fpassword"
+            id="fpassword"
+            class="border border-zinc-600 p-2 rounded-xl hover:border-violet-500 focus:border-violet-300"
+          />
+        </div>
+      </form>
+      <div class="flex gap-4">
+        <button
+          class="text-white bg-violet-500 w-36 p-2 rounded-full hover:bg-violet-400 active:bg-violet-600 focus:ring-2 ring:violet-300"
+        >
+          Sign in
+        </button>
+        <button
+          class="w-36 p-2 rounded-full text-violet-900 bg-white hover:bg-violet-300 focus:ring-2 focus:via-violet-600"
+        >
+          Sign Up
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
